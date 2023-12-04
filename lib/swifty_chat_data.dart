@@ -6,3 +6,4 @@ export 'src/models/message.dart';
 export 'src/models/message_kind.dart';
 export 'src/models/quick_reply_item.dart';
 export 'src/models/user_avatar.dart';
+export 'src/models/file_kind.dart';
