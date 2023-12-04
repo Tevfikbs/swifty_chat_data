@@ -1,4 +1,4 @@
-abstract class FileData {
+class FileData {
   FileData({
     required this.url,
     required this.mime,
