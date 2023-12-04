@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-
+import 'package:swifty_chat_data/src/models/file_kind.dart';
 import '../models/carousel_item.dart';
 import '../models/quick_reply_item.dart';
 
@@ -8,7 +7,7 @@ class MessageKind {
   MessageKind.text(this.text);
 
   /// Represents image on the screen, you can pass either `NetworkImage` or `AssetImage`
-  MessageKind.imageProvider(this.imageProvider);
+  MessageKind.file(this.file);
 
   /// Represents html on the screen.
   MessageKind.html(this.htmlData);
@@ -22,7 +21,8 @@ class MessageKind {
   MessageKind.custom(this.custom);
 
   String? text;
-  ImageProvider? imageProvider;
+
+  FileData? file;
   String? htmlData;
   List<QuickReplyItem> quickReplies = [];
   List<CarouselItem> carouselItems = [];
