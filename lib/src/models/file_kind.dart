@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class FileData {
+abstract class FileData {
   FileData({
     required this.url,
     required this.mime,
