@@ -3,6 +3,8 @@ import '../models/carousel_item.dart';
 import '../models/quick_reply_item.dart';
 
 class MessageKind {
+  MessageKind.typing(this.typing);
+
   /// Represents text on the screen.
   MessageKind.text(this.text);
 
@@ -27,4 +29,5 @@ class MessageKind {
   List<QuickReplyItem> quickReplies = [];
   List<CarouselItem> carouselItems = [];
   dynamic custom;
+  String? typing;
 }
